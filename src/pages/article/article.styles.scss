@@ -1,0 +1,57 @@
+@import "../../styles/base/base";
+
+.article {
+  padding: rem(16) 0;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    padding: rem(16) 0 rem(20) 0;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    justify-content: space-between;
+    padding: rem(16) 0;
+
+    &-block {
+      flex-shrink: 1;
+      display: flex;
+      align-items: center;
+      gap: rem(4);
+
+      p {
+        font-size: rem(16);
+        color: #2129328a;
+      }
+    }
+  }
+
+  &-text {
+    &__title {
+      padding-bottom: rem(16);
+      font-size: rem(16);
+    }
+  }
+
+  &-image-wrapper {
+    position: relative;
+    height: rem(564);
+    width: 100vw;
+    margin: 0 -100%;
+    margin: 0 calc(50% - 50vw);
+    padding: rem(32) 0;
+    @media (max-width: $mobileSmall) {
+    height: rem(364);
+    }
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

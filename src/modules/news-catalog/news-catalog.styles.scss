@@ -1,0 +1,38 @@
+@import "../../styles/base/base";
+
+.news-table {
+  padding: rem(35) 0;
+
+  .table {
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: rem(20);
+      flex-wrap: wrap;
+      padding-bottom: rem(20);
+    }
+
+    &-filters {
+      display: flex;
+      align-items: center;
+      gap: rem(20);
+    }
+  }
+
+  .filters-wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    padding-bottom: rem(20);
+    flex-wrap: wrap;
+
+    .filter-block {
+      max-width: rem(250);
+    }
+  }
+
+  .filters-hide {
+    display: none;
+  }
+}

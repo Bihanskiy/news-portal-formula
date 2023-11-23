@@ -1,0 +1,52 @@
+@import "../../../../styles/base/base";
+
+.table-wrapper {
+  width: 100%;
+  overflow: hidden;
+
+  .container {
+    height: rem(535);
+  }
+
+  .table {
+    &-head {
+      th {
+        background-color: $whiteBlueColor;
+        font-size: rem(14);
+      }
+    }
+
+    &-image {
+      object-fit: cover;
+      width: rem(100);
+      height: rem(70);
+    }
+
+    &-body {
+      td {
+        &:hover {
+          cursor: pointer;
+
+          .table-text {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &-text {
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      display: block;
+      display: -webkit-box;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+    }
+
+    &-link {
+      display: block;
+      text-align: center;
+    }
+  }
+}

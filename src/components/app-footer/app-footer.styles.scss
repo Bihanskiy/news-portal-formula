@@ -1,0 +1,25 @@
+@import "../../styles/base/base";
+
+.footer {
+  box-shadow: 0px -2px 4px 0px rgba(223, 223, 223, 0.25);
+  padding-top: rem(10);
+  padding-bottom: rem(12);
+
+  &-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(16);
+    padding-top: rem(16);
+  }
+
+  &-mail {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+
+    &__text {
+      font-size: rem(13) !important;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use "sass:math";
+
+@import "./fonts";
+@import "./mixins";
+
+$fontFamily: "Noto Sans", sans-serif;
+$fontSize: rem(9);
+
+$mainColor: #212932;
+$whiteBlueColor: #efeff3;
+$bgBlueColor: #1a232e;
+
+$minWidth: 340;
+$maxWidth: 1440;
+$maxWidthContainer: 1168;
+
+$containerPadding: 20;
+
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+$pc: em(1024);
+$tablet: em(991.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
